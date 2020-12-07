@@ -20,7 +20,7 @@ class NewsAdapter(private val news: ArrayList<News>): RecyclerView.Adapter<NewsA
         = NewsHolder(LayoutInflater.from(parent.context)
             .inflate(R.layout.item_news, parent, false))
 
-    /* this is what execute getItemCount() times for each element */
+    /* this is what executes getItemCount() times for each element */
     override fun onBindViewHolder(holder: NewsHolder, position: Int) {
         val current = news[position]
 
